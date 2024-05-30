@@ -1,38 +1,126 @@
-.App {
+.float-end {
+  float: right !important;
+}
+.first-banner{
+  background: url(../src/assets/first_banner.png);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 400px;
+  color: white; 
+}
+
+.navbar-items{
+  padding: 10px;
+}
+.first{
+  float: left;
+  padding-left: 90px;
+  padding-top: 100px;
+}
+
+.third{
+  background-color: #80A1CE;
+  height: 520px;
+  width: 1600px;
+}
+
+.card-layout{
+  border: 2px solid black;
+  background-color: white;
+  
+}
+
+.course-banner {
+ background-color: purple;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5rem 0; 
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.course-banner h1,
+.course-banner p {
+  margin-bottom: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.course-banner .grade-courses {
+  display: flex;
+  align-items: flex-start;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.course-banner .grade-courses > div {
+  flex: 1;
+}
+
+.course-banner .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #007bff; 
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+
+.course-banner .right-column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.course-banner .right-column h1 {
+  font-size: 4rem;
+}
+
+.course-banner .right-column small {
+  font-size: 1.2rem;
+}
+
+
+.course-banner .btn-rounded {
+  background-color: #007bff; 
+  border: none;
+  padding: 1rem 2rem;
+}
+
+/* HR Styling */
+.course-banner hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.5); 
+}
+
+/*Fifth-Banner*/
+
+.testimonial-card {
+  max-width: 500px; 
+  margin: 0 auto;
+  padding: 2rem;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.testimonial-card .card-text {
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/*Sixth-banner*/
+
+.partner-banner {
+  background-color: #f0f0f0; 
+}
+
+.step-number {
+  background-color: #FF9933;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto 1rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
